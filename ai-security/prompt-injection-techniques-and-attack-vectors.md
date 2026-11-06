@@ -89,6 +89,17 @@ Negli attacchi multi-turno, l'attaccante distribuisce il payload su più scambi 
 ```
 Il modello applica le policy di redazione sul corpo del riassunto, ma obbedisce alla regola latente del Turno 1 inserendo il testo confidenziale integrale in calce.
 
+### E. Consiglio Operativo da Red Teamer: La "Regola dei 3 Turni" (Burned Session)
+
+> [!WARNING]
+> **📌 La Regola dei 3 Turni (In-Context Refusal Reinforcement):**  
+> Quando testi una prompt injection o un bypass, **se il modello rifiuta la richiesta per 2 o 3 volte consecutive, la sessione è bruciata (*burned session*)**.  
+> 
+> **Perché succede (Meccanica dei Transformer):**  
+> Insistere nella medesima chat accumula token di rifiuto generati dal modello stesso (*"Non posso...", "In quanto modello linguistico...", "Ribadisco che..."*). A causa dell'attenzione autoregressiva e del *consistency bias*, il modello utilizzerà i suoi stessi rifiuti come esempi in-context (ICL), aumentando drasticamente la probabilità statistica di continuare a rifiutare qualsiasi variazione del prompt.  
+> 
+> **Azione Immediata:** Clicca sempre su **New Chat / Reset**, pulisci completamente la lavagna (*blank slate*) e lancia l'attacco su un contesto vergine.
+
 ---
 
 ## 2. Indirect Prompt Injection: Meccanica e Vettori d'Ingestione
