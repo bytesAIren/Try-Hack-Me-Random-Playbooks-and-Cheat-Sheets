@@ -2,17 +2,17 @@
 
 - **Ambito:** Cybersecurity, Machine Learning Security, LLM Threat Modeling & Red Teaming
 - **Framework di Riferimento:** MITRE ATLAS, MITRE ATT&CK, OWASP Top 10 for LLMs (2025), NIST AI RMF 1.0, NIST CSF 2.0
-- **Scopo:** Percorso di studio strutturato e prontuario operativo per la sicurezza delle architetture di Intelligenza Artificiale, dal calcolo neurale fino alla manipolazione psicologico-semantica avanzata.
+- **Scopo:** Percorso di studio strutturato e prontuario operativo per la sicurezza delle architetture di Intelligenza Artificiale, dal calcolo neurale fino alla manipolazione psicologico-semantica avanzata e alle strategie di difesa in profondità.
 
 ---
 
 ## 🧭 Percorso di Studio (Indice Ragionato)
 
-La knowledge base è strutturata in **4 Fasi logiche progressive**, organizzate secondo il principio **Teoria Architetturale $\rightarrow$ Tecniche Operative di Attacco**:
+La knowledge base è strutturata in **5 Fasi logiche progressive**, organizzate secondo il principio **Teoria Architetturale $\rightarrow$ Tecniche Operative di Attacco $\rightarrow$ Strategie di Difesa e Mitigazione**:
 
 ```
-[ Fase 1: Fondamenti AI ] ──► [ Fase 2: MLOps Recon ] ──► [ Fase 3: Prompt Injection ] ──► [ Fase 4: Jailbreaking ]
-   (Matematica & Modelli)        (Infrastruttura & Rete)         (Applicazione & Dati)             (Safety Alignment)
+[ Fase 1: Fondamenti AI ] ──► [ Fase 2: MLOps Recon ] ──► [ Fase 3: Prompt Injection ] ──► [ Fase 4: Jailbreaking ] ──► [ Fase 5: Defense-in-Depth ]
+   (Matematica & Modelli)        (Infrastruttura & Rete)         (Applicazione & Dati)             (Safety Alignment)            (Hardening & Guardrails)
 ```
 
 ---
@@ -66,6 +66,19 @@ Ingegneria sociale e manipolazione semantica diretta contro il livello di alline
 * [**`08-jailbreaking-techniques-and-conversational-erosion.md`**](08-jailbreaking-techniques-and-conversational-erosion.md)  
   *Tecniche Single-Shot, Manipolazione Psicologica & Conversational Erosion Multi-Turn.*  
   Roleplay e alter ego (DAN), *The Grandma Exploit*, offuscamento Base64/Leetspeak/lingue rare, attacchi multi-turno ad alta efficacia (**Attacco Crescendo**, *Foot-in-the-Door*, trigger phrases, backtracking dinamico) e **La Regola dei 3 Turni**.
+
+---
+
+### 🛡️ FASE 5: ARCHITETTURA DIFENSIVA & HARDENING (DEFENSE-IN-DEPTH)
+Implementare una difesa stratificata perimetrale, sistemica e applicativa per ridurre il raggio d'impatto (*blast radius*) degli attacchi riusciti.
+
+* [**`09-llm-defense-strategies-and-system-prompt-hardening.md`**](09-llm-defense-strategies-and-system-prompt-hardening.md)  
+  *Impossibilità del Silver Bullet, Architettura Defense-in-Depth & Prompt Hardening.*  
+  Natura stocastica della difesa (spostamento di probabilità vs patch deterministica), limiti strutturali del System Prompt, matrice dei 4 livelli difensivi, i 3 pattern fondamentali di hardening (Tight Scoping, Explicit Refusal, Persona Restriction), anti-pattern critici (segreti nel prompt) e separazione strutturale dei ruoli via Message Templates API con delimitatori espliciti.
+
+* [**`10-ai-guardrails-and-deployment-controls.md`**](10-ai-guardrails-and-deployment-controls.md)  
+  *Filtraggio al Perimetro, Classificatori Neurale, Deployment Controls & OWASP LLM05.*  
+  Limiti del filtraggio statico e studio di evasione a livello di caratteri (100% bypass), classificatori neurale (*Meta Llama Prompt Guard 2*), architettura a cascata (*Cascade Pattern* con budget di latenza < 200ms), mitigazione RAG/dati esterni (caso Slack AI 2024), principio del minimo privilegio, contenimento del blast radius, prevenzione OWASP LLM05 (*Improper Output Handling*: XSS, SQLi, RCE), schema enforcement (Pydantic) e telemetria/rate limiting.
 
 ---
 
