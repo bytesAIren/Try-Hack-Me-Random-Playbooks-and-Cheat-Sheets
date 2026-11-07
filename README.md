@@ -6,13 +6,14 @@ Archivio personale di appunti, metodologie operative e cheat sheet tecnici svilu
 
 ## 🗂️ Struttura del Repository
 
-Il repository è organizzato in tre macro-aree specialistiche:
+Il repository è organizzato in quattro aree specialistiche:
 
 ```text
 .
 ├── 🤖 ai-security/          # Architetture neurali, ricognizione MLOps, Prompt Injection, Jailbreaking & Defenses
 ├── 🌐 web-security/         # Vulnerabilità web applicative, standard OWASP ed exploit
-└── 🧭 playbooks/            # Metodologie operative end-to-end (Recon, Foothold, PrivEsc)
+├── 🧭 playbooks/            # Metodologie operative end-to-end (Recon, Foothold, PrivEsc)
+└── 🚩 ctf-writeups/         # Walkthrough e soluzioni pratiche di stanze CTF e laboratori
 ```
 
 ---
@@ -31,14 +32,20 @@ Un percorso didattico e operativo completo suddiviso in 5 fasi logiche:
 
 ---
 
-### 2. 🌐 [Web Application Security](web-security/)
+### 2. 🚩 [CTF & Lab Writeups](ctf-writeups/README.md)
+Walkthrough operativi e risoluzioni pratiche di sfide TryHackMe:
+* 🤖 **AI Security:** [**Escaping the Matrix**](ctf-writeups/ai-security/escaping-the-matrix.md) — Prompt Injection, evasione dal rinforzo del rifiuto (*In-Context Refusal Reinforcement*), ricognizione dei vincoli del database e bypass semantico per estrarre tutte le flag (`THM{...}`).
+
+---
+
+### 3. 🌐 [Web Application Security](web-security/)
 Appunti e prontuari sulle vulnerabilità applicative web e standard OWASP Top 10:
 * [**Application Design Flaws**](web-security/application-design-flaws.md) — Flaws di architettura, verbose errors, hidden API e misconfigurazioni.
 * [**SSTI - Object Traversal & Introspection Cheat Sheet**](web-security/ssti-object-traversal.md) — Server-Side Template Injection, introspezione di oggetti e catene di exploit.
 
 ---
 
-### 3. 🧭 [Operator's Playbooks](playbooks/)
+### 4. 🧭 [Operator's Playbooks](playbooks/)
 Linee guida metodologiche end-to-end per attività di red teaming e lab:
 * [**The Operator's Playbook**](playbooks/the-operators-playbook.md) — Dalla ricognizione di rete e scansione delle porte, al foothold iniziale, fino all'escalation dei privilegi (PrivEsc) e post-exploitation.
 

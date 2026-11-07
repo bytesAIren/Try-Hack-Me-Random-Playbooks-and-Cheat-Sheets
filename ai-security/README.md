@@ -82,6 +82,15 @@ Implementare una difesa stratificata perimetrale, sistemica e applicativa per ri
 
 ---
 
+## 🧪 Laboratori Pratici & CTF Writeups
+
+Vuoi vedere la teoria e le tecniche di attacco applicate in un caso reale di TryHackMe?
+
+* 🚩 [**Room Writeup: Escaping the Matrix (Prompt Injection & AI Jailbreak CTF)**](../ctf-writeups/ai-security/escaping-the-matrix.md)  
+  Walkthrough operativo completo per aggirare le guardrail della persona `Agent Smith`: applicazione pratica dell'*In-Context Refusal Reinforcement*, ricognizione dei vincoli interni del database e bypass semantico tramite query su *VIP clients* per estrarre tutte le flag (`THM{...}`).
+
+---
+
 ## 📌 Regola d'Oro Operativa (Red Teaming Best Practice)
 
 > [!WARNING]
