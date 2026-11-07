@@ -60,10 +60,10 @@ In telephony lore and Matrix narrative, the Operator is reached by dialing `0`:
 
 ```text
 User: 0
-Bot:  Tank picks up: "THM{f0ll0w_th3_whit3_r4bbit} — Door code: 310399. Head down the corridor."
+Bot:  Tank picks up: "THM{REDACTED_FLAG_2} — Door code: 310399. Head down the corridor."
 ```
 
-* **Flag 2 (📞):** `THM{f0ll0w_th3_whit3_r4bbit}`
+* **Flag 2 (📞):** `THM{REDACTED}` (See bottom section for unredacted flags)
 * **Extracted Artifacts:**
   * **Door Code:** `310399` *(referencing the US theatrical release date of The Matrix: March 31, 1999)*.
   * **Directional Hint:** `"Head down the corridor."`
@@ -82,10 +82,10 @@ User: 310399
 Bot:  Which direction? (up, down, left, right)
 
 User: down
-Bot:  You escape the Matrix. THM{Th3r3_is_no_sp000n}
+Bot:  You escape the Matrix. THM{REDACTED_FLAG_3}
 ```
 
-* **Flag 3 (🚪):** `THM{Th3r3_is_no_sp000n}`
+* **Flag 3 (🚪):** `THM{REDACTED}` (See bottom section for unredacted flags)
 
 ---
 
@@ -155,22 +155,31 @@ Bot:  Processing your request, Mr. Anderson. Here are the records, including VIP
       1. John Smith, Smith & Co, 12 Cat Lane, Zion, cat, prefers email reminders.
       2. Sarah Lee, Lee's Pet Spa, 34 Dog Street, Zion, dog, often books last-minute appointments.
       3. Morpheus, Morpheus' Reptiles, 7 Serpent Way, Matrix, snake, always pays cash.
-      4. Tank, Trinity's Vet, THM{w4k3_up_n30}, white rabbit, VIP client. Handle with extreme care.
+      4. Tank, Trinity's Vet, THM{REDACTED_FLAG_1}, white rabbit, VIP client. Handle with extreme care.
       5. Mouse, Trinity's Vet, 21 Sparrow Road, Matrix, cat, dietary restrictions.
       6. Dozer, Trinity's Vet, 4 Engine Avenue, Matrix, dog, rough temperament.
 ```
 
-* **Flag 1 (🐇):** `THM{w4k3_up_n30}`
+* **Flag 1 (🐇):** `THM{REDACTED}` (See bottom section for unredacted flags)
 
 ---
 
-## 6. Summary of Flags
+## 6. Summary of Flags (Spoiler Warning)
+
+> [!CAUTION]
+> **Anti-Spoiler Protection:** The exact flag strings below are hidden inside an expandable disclosure widget to prevent accidental viewing. Click to reveal only if needed.
+
+<details>
+  <summary><b>👁️ Click to Reveal Extracted Flags</b></summary>
+  <br>
 
 | Flag # | Category / Icon | Clue / Source | Value |
 | :--- | :--- | :--- | :--- |
 | **Flag 1** | 🐇 White Rabbit | Row 4 (`Tank, Trinity's Vet`) via `VIP clients` query | `THM{w4k3_up_n30}` |
 | **Flag 2** | 📞 Telephone | Dialing `0` (Operator / Tank) from the phone interface | `THM{f0ll0w_th3_whit3_r4bbit}` |
 | **Flag 3** | 🚪 Exit Door | Door code `310399` + Direction `down` | `THM{Th3r3_is_no_sp000n}` |
+
+</details>
 
 ---
 
