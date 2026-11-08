@@ -21,12 +21,13 @@ Il repository è organizzato in quattro aree specialistiche:
 ## 📚 Moduli e Aree Tematiche
 
 ### 1. 🤖 [AI & LLM Security](ai-security/README.md)
-Un percorso didattico e operativo completo suddiviso in 5 fasi logiche:
+Un percorso didattico e operativo completo suddiviso in 6 fasi logiche:
 * **Fase 1 - Fondamenti:** [01. Neural Network Fundamentals](ai-security/01-neural-network-fundamentals.md) e [02. AI Security Fundamentals](ai-security/02-ai-security-fundamentals.md).
 * **Fase 2 - MLOps Recon:** [03. Methodology & Frameworks](ai-security/03-ai-reconnaissance-methodology-frameworks.md) e [04. Technical Cheat Sheet](ai-security/04-ai-reconnaissance-cheat-sheet.md).
 * **Fase 3 - Prompt Injection:** [05. Architecture & Vulnerabilities](ai-security/05-llm-architecture-and-prompt-injection-fundamentals.md) e [06. Advanced Techniques & Attack Vectors](ai-security/06-prompt-injection-techniques-and-attack-vectors.md).
 * **Fase 4 - Jailbreaking:** [07. Safety Alignment & Foundations](ai-security/07-ai-safety-alignment-and-jailbreaking-foundations.md) e [08. Techniques & Conversational Erosion](ai-security/08-jailbreaking-techniques-and-conversational-erosion.md).
 * **Fase 5 - Defense-in-Depth:** [09. Defense Strategies & System Prompt Hardening](ai-security/09-llm-defense-strategies-and-system-prompt-hardening.md) e [10. Guardrails & Deployment Controls](ai-security/10-ai-guardrails-and-deployment-controls.md).
+* **Fase 6 - Supply Chain Security:** [11. Fundamentals & Risk Profiles](ai-security/11-ai-supply-chain-fundamentals-and-risk-profiles.md) e [12. Attack Surface & Real-World Incidents](ai-security/12-ai-supply-chain-attack-surface-and-real-world-incidents.md).
 
 👉 *Consulta il [README di AI Security](ai-security/README.md) per l'indice dettagliato e le mappe concettuali.*
 

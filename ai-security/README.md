@@ -8,11 +8,11 @@
 
 ## 🧭 Percorso di Studio (Indice Ragionato)
 
-La knowledge base è strutturata in **5 Fasi logiche progressive**, organizzate secondo il principio **Teoria Architetturale $\rightarrow$ Tecniche Operative di Attacco $\rightarrow$ Strategie di Difesa e Mitigazione**:
+La knowledge base è strutturata in **6 Fasi logiche progressive**, organizzate secondo il principio **Teoria Architetturale $\rightarrow$ Tecniche Operative di Attacco $\rightarrow$ Strategie di Difesa e Mitigazione $\rightarrow$ Supply Chain Security**:
 
 ```
-[ Fase 1: Fondamenti AI ] ──► [ Fase 2: MLOps Recon ] ──► [ Fase 3: Prompt Injection ] ──► [ Fase 4: Jailbreaking ] ──► [ Fase 5: Defense-in-Depth ]
-   (Matematica & Modelli)        (Infrastruttura & Rete)         (Applicazione & Dati)             (Safety Alignment)            (Hardening & Guardrails)
+[ Fase 1: Fondamenti AI ] ──► [ Fase 2: MLOps Recon ] ──► [ Fase 3: Prompt Injection ] ──► [ Fase 4: Jailbreaking ] ──► [ Fase 5: Defense-in-Depth ] ──► [ Fase 6: Supply Chain ]
+   (Matematica & Modelli)        (Infrastruttura & Rete)         (Applicazione & Dati)             (Safety Alignment)            (Hardening & Guardrails)        (Modelli & Dipendenze)
 ```
 
 ---
@@ -79,6 +79,19 @@ Implementare una difesa stratificata perimetrale, sistemica e applicativa per ri
 * [**`10-ai-guardrails-and-deployment-controls.md`**](10-ai-guardrails-and-deployment-controls.md)  
   *Filtraggio al Perimetro, Classificatori Neurale, Deployment Controls & OWASP LLM05.*  
   Limiti del filtraggio statico e studio di evasione a livello di caratteri (100% bypass), classificatori neurale (*Meta Llama Prompt Guard 2*), architettura a cascata (*Cascade Pattern* con budget di latenza < 200ms), mitigazione RAG/dati esterni (caso Slack AI 2024), principio del minimo privilegio, contenimento del blast radius, prevenzione OWASP LLM05 (*Improper Output Handling*: XSS, SQLi, RCE), schema enforcement (Pydantic) e telemetria/rate limiting.
+
+---
+
+### 📦 FASE 6: AI SUPPLY CHAIN SECURITY
+Analisi delle catene di fornitura specifiche dell'Intelligenza Artificiale, differenze rispetto al software tradizionale, paradigmi di consumo dei modelli e casistica reale di compromissione.
+
+* [**`11-ai-supply-chain-fundamentals-and-risk-profiles.md`**](11-ai-supply-chain-fundamentals-and-risk-profiles.md)  
+  *Fondamenti della Supply Chain AI, Relazioni di Fiducia & Paradigmi Download vs API.*  
+  Differenze tra supply chain SW tradizionale e AI, i 4 componenti (modelli, dataset, framework, dipendenze), architettura delle relazioni di fiducia, rischi del Transfer Learning/Fine-Tuning e LoRA, profili di rischio per formato file (`.pkl` vs `.safetensors` vs `.gguf` vs `.h5`), quantizzazione e matrice comparativa Download vs API.
+
+* [**`12-ai-supply-chain-attack-surface-and-real-world-incidents.md`**](12-ai-supply-chain-attack-surface-and-real-world-incidents.md)  
+  *4 Livelli d'Attacco, Compounding Effect & 5 Incidenti Reali (2022–2025).*  
+  Mappatura della superficie d'attacco su 4 layer (Model, Dependency, Data, Infrastructure), tassonomia degli attacchi a livello di modello (serializzazione, architettura, pesi), effetto combinato multi-layer, e analisi dettagliata di: **PyTorch `torchtriton` Dependency Confusion**, **Hugging Face Token Leak & Pickle Malware**, **Ultralytics YOLO CI/CD**, **Solana web3.js Hijacking** e **NullifAI Scanner Evasion**.
 
 ---
 
