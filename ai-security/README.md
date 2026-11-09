@@ -93,6 +93,18 @@ Analisi delle catene di fornitura specifiche dell'Intelligenza Artificiale, diff
   *4 Livelli d'Attacco, Compounding Effect & 5 Incidenti Reali (2022–2025).*  
   Mappatura della superficie d'attacco su 4 layer (Model, Dependency, Data, Infrastructure), tassonomia degli attacchi a livello di modello (serializzazione, architettura, pesi), effetto combinato multi-layer, e analisi dettagliata di: **PyTorch `torchtriton` Dependency Confusion**, **Hugging Face Token Leak & Pickle Malware**, **Ultralytics YOLO CI/CD**, **Solana web3.js Hijacking** e **NullifAI Scanner Evasion**.
 
+### 📦 FASE 7: SUPPLY CHAIN ESTESA — TEORIA, ATTACCHI E PRATICA
+I nuovi appunti approfondiscono la superficie di rischio, le campagne multi-vettore e l'analisi forense sicura.
+
+* [**`13-ai-supply-chain-theory-and-threat-surface.md`**](13-ai-supply-chain-theory-and-threat-surface.md)  
+  *Teoria e superficie d'attacco.* Modelli, dipendenze, dataset, repository, API hosted, formati di serializzazione e controlli architetturali.
+
+* [**`14-ai-supply-chain-attacks-and-incidents.md`**](14-ai-supply-chain-attacks-and-incidents.md)  
+  *Attacchi, ricognizione e incident response.* Dependency confusion, typosquatting, repository compromise, convergenza multi-vettore TryTrainMe e risposta all'incidente.
+
+* [**`15-ai-supply-chain-forensics-and-labs.md`**](15-ai-supply-chain-forensics-and-labs.md)  
+  *Forensics e laboratorio pratico.* Disassembly sicuro di Pickle, audit di pacchetti Python, verifica di namespace e checklist di accettazione.
+
 ---
 
 ## 🧪 Laboratori Pratici & CTF Writeups

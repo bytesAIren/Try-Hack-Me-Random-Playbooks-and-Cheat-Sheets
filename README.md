@@ -28,6 +28,7 @@ Un percorso didattico e operativo completo suddiviso in 6 fasi logiche:
 * **Fase 4 - Jailbreaking:** [07. Safety Alignment & Foundations](ai-security/07-ai-safety-alignment-and-jailbreaking-foundations.md) e [08. Techniques & Conversational Erosion](ai-security/08-jailbreaking-techniques-and-conversational-erosion.md).
 * **Fase 5 - Defense-in-Depth:** [09. Defense Strategies & System Prompt Hardening](ai-security/09-llm-defense-strategies-and-system-prompt-hardening.md) e [10. Guardrails & Deployment Controls](ai-security/10-ai-guardrails-and-deployment-controls.md).
 * **Fase 6 - Supply Chain Security:** [11. Fundamentals & Risk Profiles](ai-security/11-ai-supply-chain-fundamentals-and-risk-profiles.md) e [12. Attack Surface & Real-World Incidents](ai-security/12-ai-supply-chain-attack-surface-and-real-world-incidents.md).
+* **Fase 7 - Supply Chain estesa:** [13. Teoria & Threat Surface](ai-security/13-ai-supply-chain-theory-and-threat-surface.md), [14. Attacchi & Incident Response](ai-security/14-ai-supply-chain-attacks-and-incidents.md) e [15. Forensics & Labs](ai-security/15-ai-supply-chain-forensics-and-labs.md).
 
 👉 *Consulta il [README di AI Security](ai-security/README.md) per l'indice dettagliato e le mappe concettuali.*
 
