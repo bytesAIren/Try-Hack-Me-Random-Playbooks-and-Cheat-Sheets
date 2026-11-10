@@ -105,6 +105,18 @@ I nuovi appunti approfondiscono la superficie di rischio, le campagne multi-vett
 * [**`15-ai-supply-chain-forensics-and-labs.md`**](15-ai-supply-chain-forensics-and-labs.md)  
   *Forensics e laboratorio pratico.* Disassembly sicuro di Pickle, audit di pacchetti Python, verifica di namespace e checklist di accettazione.
 
+### 🛡️ FASE 8: MODEL ASSURANCE & HOSTED AI
+Approfondimenti difensivi su serializzazione, scanning, integrità, dipendenze, SBOM e consumo di API gestite.
+
+* [**`16-ai-model-serialization-scanning-and-keras-forensics.md`**](16-ai-model-serialization-scanning-and-keras-forensics.md)  
+  *Serializzazione, scanning e Keras forensics.* SafeTensors, `weights_only=True`, Fickling, ModelScan e analisi dei Lambda layer senza esecuzione del modello.
+
+* [**`17-ai-model-integrity-dependency-and-sbom-governance.md`**](17-ai-model-integrity-dependency-and-sbom-governance.md)  
+  *Integrità, dipendenze e SBOM.* Model Acquisition Framework, SHA-256, provenance, LoRA, lockfile, private index, `pip-audit` e CycloneDX.
+
+* [**`18-hosted-ai-api-governance-and-prompt-security.md`**](18-hosted-ai-api-governance-and-prompt-security.md)  
+  *Governance delle API hosted.* Due diligence del provider, prompt come artefatti di supply chain, sandbox, validazione output e minimo privilegio sui tool.
+
 ---
 
 ## 🧪 Laboratori Pratici & CTF Writeups
