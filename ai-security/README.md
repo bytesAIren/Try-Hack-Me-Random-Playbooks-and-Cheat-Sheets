@@ -117,6 +117,15 @@ Approfondimenti difensivi su serializzazione, scanning, integrità, dipendenze, 
 * [**`18-hosted-ai-api-governance-and-prompt-security.md`**](18-hosted-ai-api-governance-and-prompt-security.md)  
   *Governance delle API hosted.* Due diligence del provider, prompt come artefatti di supply chain, sandbox, validazione output e minimo privilegio sui tool.
 
+### 📚 FASE 9: RAG SECURITY
+I moduli RAG sono stati consolidati in due documenti complementari, mantenendo la separazione tra teoria/threat modeling e pratica/difesa.
+
+* [**`19-rag-architecture-poisoning-and-retrieval-threats.md`**](19-rag-architecture-poisoning-and-retrieval-threats.md)  
+  *Teoria e minacce.* Architettura RAG, confini di fiducia, data/model poisoning, embedding e corpus poisoning, retrieval abuse e threat modeling.
+
+* [**`20-rag-defense-poisoning-detection-and-governance.md`**](20-rag-defense-poisoning-detection-and-governance.md)  
+  *Pratica e hardening.* Controlli di ingestion, retrieval e output, detection stratificata, laboratorio concettuale, governance e risposta agli incidenti.
+
 ---
 
 ## 🧪 Laboratori Pratici & CTF Writeups

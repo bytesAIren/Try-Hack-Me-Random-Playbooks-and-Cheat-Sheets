@@ -30,6 +30,7 @@ Un percorso didattico e operativo completo suddiviso in 6 fasi logiche:
 * **Fase 6 - Supply Chain Security:** [11. Fundamentals & Risk Profiles](ai-security/11-ai-supply-chain-fundamentals-and-risk-profiles.md) e [12. Attack Surface & Real-World Incidents](ai-security/12-ai-supply-chain-attack-surface-and-real-world-incidents.md).
 * **Fase 7 - Supply Chain estesa:** [13. Teoria & Threat Surface](ai-security/13-ai-supply-chain-theory-and-threat-surface.md), [14. Attacchi & Incident Response](ai-security/14-ai-supply-chain-attacks-and-incidents.md) e [15. Forensics & Labs](ai-security/15-ai-supply-chain-forensics-and-labs.md).
 * **Fase 8 - Model Assurance & Hosted AI:** [16. Serialization, Scanning & Keras Forensics](ai-security/16-ai-model-serialization-scanning-and-keras-forensics.md), [17. Integrity, Dependencies & SBOM](ai-security/17-ai-model-integrity-dependency-and-sbom-governance.md) e [18. Hosted API Governance](ai-security/18-hosted-ai-api-governance-and-prompt-security.md).
+* **Fase 9 - RAG Security:** [19. RAG Architecture, Poisoning & Retrieval Threats](ai-security/19-rag-architecture-poisoning-and-retrieval-threats.md) e [20. RAG Defense, Detection & Governance](ai-security/20-rag-defense-poisoning-detection-and-governance.md).
 
 👉 *Consulta il [README di AI Security](ai-security/README.md) per l'indice dettagliato e le mappe concettuali.*
 
