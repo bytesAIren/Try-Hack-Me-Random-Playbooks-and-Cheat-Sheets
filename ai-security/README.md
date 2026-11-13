@@ -126,6 +126,18 @@ I moduli RAG sono stati consolidati in due documenti complementari, mantenendo l
 * [**`20-rag-defense-poisoning-detection-and-governance.md`**](20-rag-defense-poisoning-detection-and-governance.md)  
   *Pratica e hardening.* Controlli di ingestion, retrieval e output, detection stratificata, laboratorio concettuale, governance e risposta agli incidenti.
 
+### 🔐 FASE 10: RAG CONFIDENTIALITY & ACCESS CONTROL
+Approfondimento su retrieval come security boundary, disclosure, privacy degli embedding, casi CVE e controlli deterministici.
+
+* [**`21-rag-retrieval-security-boundaries-and-vector-privacy.md`**](21-rag-retrieval-security-boundaries-and-vector-privacy.md)  
+  *Teoria e threat modeling.* Pre-filtering, segmentazione multi-tenant, embedding privacy, AnythingLLM CVE-2024-3033, Milvus CVE-2025-64513 e mapping OWASP/MITRE/CWE.
+
+* [**`22-rag-sensitive-information-disclosure-and-retrieval-abuse.md`**](22-rag-sensitive-information-disclosure-and-retrieval-abuse.md)  
+  *Disclosure e incident analysis.* OWASP LLM02, retrieval abuse, logging leakage, EchoLeak CVE-2025-32711, Proof Pudding CVE-2019-20634 e model extraction.
+
+* [**`23-rag-disclosure-defense-and-governance-playbook.md`**](23-rag-disclosure-defense-and-governance-playbook.md)  
+  *Playbook pratico.* DLP, redaction, ACL deterministiche, codice Python di pre-filtering, output controls, retention, detection e incident response.
+
 ---
 
 ## 🧪 Laboratori Pratici & CTF Writeups
