@@ -6,11 +6,12 @@ Archivio personale di appunti, metodologie operative e cheat sheet tecnici svilu
 
 ## 🗂️ Struttura del Repository
 
-Il repository è organizzato in quattro aree specialistiche:
+Il repository è organizzato nelle seguenti aree specialistiche:
 
 ```text
 .
 ├── 🤖 ai-security/          # Architetture neurali, ricognizione MLOps, Prompt Injection, Jailbreaking & Defenses
+├── 🦾 agentic-ai-security/  # Sistemi autonomi, protocolli MCP/A2A, ReAct, Multi-Agent, Least Agency & Threat Modeling
 ├── 🌐 web-security/         # Vulnerabilità web applicative, standard OWASP ed exploit
 ├── 🧭 playbooks/            # Metodologie operative end-to-end (Recon, Foothold, PrivEsc)
 └── 🚩 ctf-writeups/         # Walkthrough e soluzioni pratiche di stanze CTF e laboratori
@@ -21,7 +22,7 @@ Il repository è organizzato in quattro aree specialistiche:
 ## 📚 Moduli e Aree Tematiche
 
 ### 1. 🤖 [AI & LLM Security](ai-security/README.md)
-Un percorso didattico e operativo completo suddiviso in 6 fasi logiche:
+Un percorso didattico e operativo completo suddiviso in 10 fasi logiche:
 * **Fase 1 - Fondamenti:** [01. Neural Network Fundamentals](ai-security/01-neural-network-fundamentals.md) e [02. AI Security Fundamentals](ai-security/02-ai-security-fundamentals.md).
 * **Fase 2 - MLOps Recon:** [03. Methodology & Frameworks](ai-security/03-ai-reconnaissance-methodology-frameworks.md) e [04. Technical Cheat Sheet](ai-security/04-ai-reconnaissance-cheat-sheet.md).
 * **Fase 3 - Prompt Injection:** [05. Architecture & Vulnerabilities](ai-security/05-llm-architecture-and-prompt-injection-fundamentals.md) e [06. Advanced Techniques & Attack Vectors](ai-security/06-prompt-injection-techniques-and-attack-vectors.md).
@@ -37,20 +38,35 @@ Un percorso didattico e operativo completo suddiviso in 6 fasi logiche:
 
 ---
 
-### 2. 🚩 [CTF & Lab Writeups](ctf-writeups/README.md)
+### 2. 🦾 [Agentic AI Security](agentic-ai-security/README.md)
+Percorso specialistico focalizzato sull'architettura, sul threat modeling e sulle tecniche di difesa per sistemi ad agenti autonomi ed ecosistemi multi-agent (allineato ai 5 moduli del percorso **TryHackMe Agentic AI Security**):
+* **Modulo 1 - Agentic AI Fundamentals:**
+  * [01. Architecture, Patterns & Protocols](agentic-ai-security/01-agentic-ai-architecture-and-protocols.md) — The Agentic Loop, ciclo ReAct e grounding, anatomia JSON dei Tool, progettazione ACI (*Agent-Computer Interface*), topologia *Orchestrator-Workers* (tool wrapping/handoffs) e protocolli standard esterni (**MCP** per tool/risorse e **A2A** per la delega inter-agente).
+  * [02. Threat Modeling & Least Agency](agentic-ai-security/02-agentic-ai-threat-modeling-and-least-agency.md) — Escalation della superficie d'attacco, principio di **Least Agency** (OWASP LLM06), governance IAM con i 4 pilastri pratici (*Time-Boxed, One Credential, Tool-Bound, Tracked Inheritance*), matrice dei vettori d'attacco e standard OWASP ASI01/ASI04.
+* **Moduli 2-5 (In evoluzione):**
+  * *Modulo 2:* Agent Hijacking (Goal Hijack & deviation).
+  * *Modulo 3:* Agent Components & Authority (IAM abuse & tool authority).
+  * *Modulo 4:* Agent Runtime & Memory (Memory poisoning & comms bus).
+  * *Modulo 5:* Rogue Agents & Systemic Failure (Containment & cascading response).
+
+👉 *Consulta il [README di Agentic AI Security](agentic-ai-security/README.md) per l'indice ragionato e la roadmap completa.*
+
+---
+
+### 3. 🚩 [CTF & Lab Writeups](ctf-writeups/README.md)
 Walkthrough operativi e risoluzioni pratiche di sfide TryHackMe:
 * 🤖 **AI Security:** [**Escaping the Matrix**](ctf-writeups/ai-security/escaping-the-matrix.md) — Prompt Injection, evasione dal rinforzo del rifiuto (*In-Context Refusal Reinforcement*), ricognizione dei vincoli del database e bypass semantico per estrarre tutte le flag (`THM{...}`).
 
 ---
 
-### 3. 🌐 [Web Application Security](web-security/)
+### 4. 🌐 [Web Application Security](web-security/)
 Appunti e prontuari sulle vulnerabilità applicative web e standard OWASP Top 10:
 * [**Application Design Flaws**](web-security/application-design-flaws.md) — Flaws di architettura, verbose errors, hidden API e misconfigurazioni.
 * [**SSTI - Object Traversal & Introspection Cheat Sheet**](web-security/ssti-object-traversal.md) — Server-Side Template Injection, introspezione di oggetti e catene di exploit.
 
 ---
 
-### 4. 🧭 [Operator's Playbooks](playbooks/)
+### 5. 🧭 [Operator's Playbooks](playbooks/)
 Linee guida metodologiche end-to-end per attività di red teaming e lab:
 * [**The Operator's Playbook**](playbooks/the-operators-playbook.md) — Dalla ricognizione di rete e scansione delle porte, al foothold iniziale, fino all'escalation dei privilegi (PrivEsc) e post-exploitation.
 
