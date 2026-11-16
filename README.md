@@ -43,6 +43,8 @@ Percorso specialistico focalizzato sull'architettura, sul threat modeling e sull
 * **Modulo 1 - Agentic AI Fundamentals:**
   * [01. Architecture, Patterns & Protocols](agentic-ai-security/01-agentic-ai-architecture-and-protocols.md) — The Agentic Loop, ciclo ReAct e grounding, anatomia JSON dei Tool, progettazione ACI (*Agent-Computer Interface*), topologia *Orchestrator-Workers* (tool wrapping/handoffs) e protocolli standard esterni (**MCP** per tool/risorse e **A2A** per la delega inter-agente).
   * [02. Threat Modeling & Least Agency](agentic-ai-security/02-agentic-ai-threat-modeling-and-least-agency.md) — Escalation della superficie d'attacco, principio di **Least Agency** (OWASP LLM06), governance IAM con i 4 pilastri pratici (*Time-Boxed, One Credential, Tool-Bound, Tracked Inheritance*), matrice dei vettori d'attacco e standard OWASP ASI01/ASI04.
+  * [03. Attack Surfaces & Trust Boundaries](agentic-ai-security/03-agentic-ai-attack-surfaces-and-trust-boundaries.md) — Metodologia di threat modelling agentico, caso studio TryTrainMe e blast radii, i 4 pilastri (Assets, Components, Data Flows, Trust Boundaries), la transizione *From Influence to Authority* e la catena di propagazione sistemica.
+  * [04. Threat Classification & Prioritization](agentic-ai-security/04-agentic-ai-threat-classification-stride-and-prioritization.md) — Mappatura STRIDE per sistemi autonomi, OWASP Agentic Threats su 7 aree, correlazione OWASP Top 10 (ASI01–ASI10), scenario pratico di manipolazione dei ticket, i 5 fattori di prioritizzazione e template per *Security Finding* azionabili.
 * **Moduli 2-5 (In evoluzione):**
   * *Modulo 2:* Agent Hijacking (Goal Hijack & deviation).
   * *Modulo 3:* Agent Components & Authority (IAM abuse & tool authority).
