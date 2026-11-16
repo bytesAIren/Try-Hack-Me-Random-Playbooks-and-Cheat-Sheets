@@ -44,6 +44,24 @@ Il percorso sulla sicurezza dei sistemi Agentic è strutturato in **5 Moduli log
   * **Threat Modeling dei Componenti:** Vettori di attacco su ACI (parameter injection), Multi-Agent (propagazione a cascata, contaminazione del contesto) e protocolli esterni (Tool Poisoning su MCP, Indirect Prompt Injection, Confused Deputy su A2A).
   * **Mappatura OWASP Agentic AI:** Riferimento formale a **ASI01** (*Agent Goal Hijack*), **ASI04** (*Agentic Supply Chain*) e checklist pre-deployment.
 
+* [**`03-agentic-ai-attack-surfaces-and-trust-boundaries.md`**](03-agentic-ai-attack-surfaces-and-trust-boundaries.md)  
+  *Mappatura Architetturale, Superfici d'Attacco, Confini di Fiducia e Autorità (Caso TryTrainMe).*  
+  * **Ecosistema Multi-Agent TryTrainMe:** Topologia dell'Orchestrator, agenti specializzati e analisi comparativa dei *Blast Radii* (da `docs-agent` a sola lettura fino a `deploy-agent` e `access-agent` critici).
+  * **Identità Scoped vs Credenziali Condivise:** Isolamento delle credenziali e impatto dei protocolli di rete (MCP e A2A) come vettori cross-boundary.
+  * **I 4 Pilastri del Threat Modelling Agentic:** Assets, Components, Data Flows e Trust Boundaries (*Data can become influence*).
+  * **Dall'Influenza all'Autorità:** Transizione critica da contenuto informativo non fidato a esecuzione privilegiata di tool sull'infrastruttura.
+  * **Catena di Propagazione e Superfici:** Mappatura su 6 dimensioni operative (Inputs, External Data, Memory, Tools, Credentials, Agent Communication) e catena sistemica (Ingresso $\rightarrow$ Persistenza $\rightarrow$ Autorità $\rightarrow$ Propagazione).
+  * **Superficie d'Attacco vs Vulnerabilità:** Distinzione formale tra capacità legittima esposta e assenza di controlli; le 5 domande guida del threat modeller.
+
+* [**`04-agentic-ai-threat-classification-stride-and-prioritization.md`**](04-agentic-ai-threat-classification-stride-and-prioritization.md)  
+  *Classificazione STRIDE per Agenti, Framework OWASP, Prioritizzazione del Rischio e Security Findings.*  
+  * **Le 3 Prospettive Complementari:** Convergenza tra STRIDE (proprietà violata), OWASP Threats & Mitigations (architettura abilitante) e OWASP Agentic Top 10 (pattern industriale ricorrente).
+  * **Matrice STRIDE per Sistemi Agentic:** Declinazione operativa di Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service (Denial of Wallet) ed Elevation of Privilege.
+  * **OWASP Agentic Threats su 7 Aree:** Inputs, Memory, Tools, Credentials, Delegation, MCP/External Services e Outputs/Effects.
+  * **Caso Studio Integrato (Manipolazione Ticket TryTrainMe):** Scomposizione analitica completa del percorso d'attacco su `desk-agent` attraverso i tre framework.
+  * **I 5 Fattori di Prioritizzazione:** Reachability, Authority, Blast Radius, Detectability e Reproducibility.
+  * **Standard di Documentazione:** Template ingegneristico per redigere *Security Finding* azionabili (Attack Path, Agentic Weakness, Security Impact, Priority & Remediation).
+
 ---
 
 ### 🎯 MODULO 2: AGENT HIJACKING *(In Lavorazione)*
