@@ -62,6 +62,26 @@ Il percorso sulla sicurezza dei sistemi Agentic è strutturato in **5 Moduli log
   * **I 5 Fattori di Prioritizzazione:** Reachability, Authority, Blast Radius, Detectability e Reproducibility.
   * **Standard di Documentazione:** Template ingegneristico per redigere *Security Finding* azionabili (Attack Path, Agentic Weakness, Security Impact, Priority & Remediation).
 
+* [**`05-agentic-ai-observability-audit-logging-and-active-controls.md`**](05-agentic-ai-observability-audit-logging-and-active-controls.md)  
+  *Architettura dell'Osservabilità, Telemetria, Controlli Attivi a Runtime e Detection Engineering (How to Monitor & Defend).*  
+  * **Il Modello "Four Stages, Four Records":** Start, Act, Check e Reach; caso di studio Replit (perché i vincoli nel prompt falliscono senza un gate deterministico in fase di Check); importanza investigativa dei *Missing Records*.
+  * **Architettura di Logging:** Visibilità locale (Inspector) vs globale (Audit Log immutabili); il ciclo degli 8 eventi per richiesta multi-agent; code di delega `queue.post` e `queue.read`.
+  * **Identità di Servizio e Punti Ciechi:** Attribuzione reale dei privilegi tramite `identity=` vs `actor`; standard OWASP e OpenTelemetry GenAI; blind spots nelle conversioni multimodali (`media-agent`).
+  * **Controlli Attivi a Runtime:** I 4 stati decisionali dei `guardrail` (il rischio critico di `not_evaluated`); Checkpoint Human-in-the-Loop (HITL) a due record (`approval.request` + `approval.decision`) e prevenzione dell'*Approval Fatigue*; requisiti architetturali del **Kill Switch out-of-band**.
+  * **Baselining, Drift e SIEM:** Metodologia dei 3 pilastri della baseline; le 3 Red Flag negli audit log; fallimento della media mobile su finestre scorrevoli e necessità di baseline fissa; rilevamento di Shared Memory Poisoning; regole SIEM (*First-Seen*, *Missing Event*, *Parameter Drift*).
+  * **Checklist di Platform Readiness:** Le 5 domande fondamentali prima del rilascio in produzione.
+
+* [**`06-agentic-ai-dfir-lab-forensics-and-incident-investigation.md`**](06-agentic-ai-dfir-lab-forensics-and-incident-investigation.md)  
+  *Walkthrough Forense Pratico, Triangolazione delle Autorizzazioni e Incident Investigation (Caso TryTrainMe).*  
+  * **Profilazione della Baseline:** Costruzione della baseline operativa di `access-agent` su tre sessioni ordinarie (`S-40119`–`S-40121`).
+  * **Procedura di Triangolazione (Sessione `S-40122`):** La regola delle 3 verifiche (Ticket Service Desk `R-5509` + record `approval.decision` riga `0038` + sequenza temporale `0038` < `0039`) per validare l'azione `grant_access` come pienamente autorizzata.
+  * **Investigazione di Memory Poisoning:** Ispezione della memoria condivisa con `recall_context` e smascheramento della nota non autorizzata scritta da `desk-agent`.
+  * **Indagine Forense Completa dell'Incidente `S-40126`:**
+    * *Analisi `docs-agent`:* Invocazione nuovo tool su chiamata `C-2210` $\rightarrow$ Triangolazione con ticket `R-5512` e approvazione riga `0034` $\rightarrow$ Falso positivo / Legittimo.
+    * *Analisi `log-agent`:* Tre esportazioni non richieste in 18 eventi; trigger automatico `trigger.fire`; escalation dei parametri (*Parameter Drift* da `7d` a `90d`); tre guardrail spenti (`not_evaluated`) $\rightarrow$ Incidente critico confermato (Rogue Activity).
+    * *Ricerca Origine:* Query globale su tutte le sessioni per l'evento `schedule.create` $\rightarrow$ Risultato vuoto (`rows: []`) e prova forense del **Missing Record** (`SCH-9041`).
+  * **Incident Report Esecutivo Finale:** Sintesi investigativa strutturata e piano di remediation immediato per il management.
+
 ---
 
 ### 🎯 MODULO 2: AGENT HIJACKING *(In Lavorazione)*
